@@ -1,0 +1,10 @@
+name = "KrakenFortran"
+uuid = "7d31e18c-5381-55ae-b247-03472e564595"
+authors = ["Ariel Vardi <vardister@proton.me>"]
+version = "0.1.0"
+
+[workspace]
+projects = ["test", "docs"]
+
+[compat]
+julia = "1.10"

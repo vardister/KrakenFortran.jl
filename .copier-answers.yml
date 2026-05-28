@@ -1,0 +1,43 @@
+# Changes here will be overwritten by Copier
+AddAllcontributors: true
+AddChangelog: true
+AddCitationCFF: true
+AddCodeOfConduct: true
+AddContributionDocs: true
+AddCopierCI: true
+AddDocs: true
+AddDocsCI: true
+AddFormatterAndLinterConfigFiles: true
+AddGitHubPRTemplate: true
+AddGitHubTemplates: true
+AddLintCI: true
+AddLychee: true
+AddMacToCI: true
+AddPrecommit: true
+AddPrecommitUpdateCI: true
+AddTagBotCI: true
+AddTestCI: true
+AddWinToCI: true
+Authors: Ariel Vardi <vardister@proton.me>
+CheckExplicitImports: true
+CodeOfConductContact: vardister@proton.me
+ConfigIndentation: 2
+ExplicitImportsChecklist: exclude_all_qualified_accesses_are_public
+GitHubActionVersionAutoUpdate: dependabot
+JuliaCompatAutoUpdate: dependabot
+JuliaIndentation: 4
+JuliaMinCIVersion: lts
+JuliaMinVersion: '1.10'
+License: MIT
+LicenseCopyrightHolders: Ariel Vardi
+MarkdownIndentation: 2
+PackageName: KrakenFortran
+PackageOwner: vardister
+PackageUUID: 7d31e18c-5381-55ae-b247-03472e564595
+RunJuliaNightlyOnCI: true
+StrategyConfirmIncluded: true
+StrategyLevel: 2
+StrategyReviewExcluded: true
+TestingStrategy: testitem_basic
+UseCirrusCI: false
+_src_path: /Users/arielv/.julia/packages/BestieTemplate/6QVd6
