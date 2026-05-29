@@ -1,18 +1,21 @@
 # using Parameters
 using UnPack: UnPack, @unpack
 
-libpath = @__DIR__
+# --- Library Handling ---
+# During development, we use the local library.
+# Once KrakenFortran_jll is registered, this will be replaced by:
+# using KrakenFortran_jll
+# const libkraken = KrakenFortran_jll.libkraken
+
+function get_libpath()
+    lib_ext = Sys.isapple() ? "dylib" : Sys.iswindows() ? "dll" : "so"
+    return joinpath(@__DIR__, "kraken.$lib_ext")
+end
+
+const libkraken = get_libpath()
+# ------------------------
 
 fillnan(x) = isnan(x) ? zero(x) : x
-
-# set filepath to the KRAKEN library depending on the OS
-if Sys.isapple()
-    libpath = joinpath(libpath, "kraken.dylib")
-elseif Sys.islinux()
-    libpath = joinpath(libpath, "kraken.so")
-elseif Sys.iswindows()
-    libpath = joinpath(libpath, "kraken.dll")
-end
 
 ###########################################################################################
 # ABSTRACT TYPES
@@ -315,7 +318,7 @@ function call_kraken(
     modes = zeros(nz, nm)
 
     ccall(
-        (:kraken_, "$libpath"),
+        (:kraken_, libkraken),
         Nothing,
         (
             Ref{Int},
