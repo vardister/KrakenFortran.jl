@@ -1,5 +1,3 @@
-using Printf: Printf
-
 export read_mod_file
 
 function read_mod_file(filepath::String, freq::Float64)
