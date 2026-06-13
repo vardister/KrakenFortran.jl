@@ -1,10 +1,30 @@
 name = "KrakenFortran"
 uuid = "7d31e18c-5381-55ae-b247-03472e564595"
-authors = ["Ariel Vardi <vardister@proton.me>"]
 version = "0.1.0"
+authors = ["Ariel Vardi <vardister@proton.me>"]
 
 [workspace]
 projects = ["test", "docs"]
 
+[deps]
+DSP = "717857b8-e6f2-59f4-9121-6e50c889abd2"
+DataInterpolations = "82cc6244-b520-54b8-b5a6-8a565e85f1d0"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+Infiltrator = "5903a43b-9cc3-4c30-8d17-598619ec4e9b"
+NamedArrays = "86f7a689-2022-50b4-a561-43c23ac3c673"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+QuadGK = "1fd47b50-473d-5c70-9696-f719f8f3bcdc"
+UnPack = "3a884ed6-31ef-47d7-9d2a-63182c4928ed"
+UnderwaterAcoustics = "0efb1f7a-1ce7-46d2-9f48-546a4c8fbb99"
+
 [compat]
+DSP = "0.8.5"
+DataInterpolations = "8.10.0"
+FFTW = "1.10.0"
+Infiltrator = "1.9.11"
+NamedArrays = "0.10.5"
+Printf = "1.11.0"
+QuadGK = "2.11.3"
+UnPack = "1.0.2"
+UnderwaterAcoustics = "0.7.5"
 julia = "1.10"

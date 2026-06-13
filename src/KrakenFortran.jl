@@ -1,11 +1,8 @@
 module KrakenFortran
 
-"""
-    hi = hello_world()
-A simple function to return "Hello, World!"
-"""
-function hello_world()
-    return "Hello, World!"
-end
+include("core.jl")
+include("acoustic_field.jl")
+include("io.jl")
+export UnderwaterEnvironmentFORTRAN, kraken, pressure_field_fortran, env_builder
 
 end
