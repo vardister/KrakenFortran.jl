@@ -19,7 +19,7 @@ UnderwaterAcoustics = "0efb1f7a-1ce7-46d2-9f48-546a4c8fbb99"
 
 [compat]
 DSP = "0.8.5"
-DataInterpolations = "8.10.0"
+DataInterpolations = "8.10.0, 9.0"
 FFTW = "1.10.0"
 Infiltrator = "1.9.11"
 NamedArrays = "0.10.5"
