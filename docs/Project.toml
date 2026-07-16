@@ -5,6 +5,7 @@ KrakenFortran = "7d31e18c-5381-55ae-b247-03472e564595"
 
 [compat]
 Documenter = "1"
+LiveServer = "1.5.0"
 
 [sources]
 KrakenFortran = {path = ".."}
